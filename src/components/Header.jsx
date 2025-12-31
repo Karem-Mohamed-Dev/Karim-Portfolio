@@ -7,9 +7,11 @@ import { FiGithub , FiLinkedin, FiFileText } from "react-icons/fi";
 
 
 const navArr = [
+  // { link: "home", name: "Home" },
   { link: "about", name: "About" },
   { link: "skills", name: "Skills" },
   { link: "projects", name: "Projects" },
+  // { link: "contact", name: "Contact" },
 ];
 
 const Header = () => {
@@ -17,17 +19,17 @@ const Header = () => {
 
   return (
     <header className="w-full fixed left-0 top-4">
-      <div className="bg-black/85 text-white mx-auto w-[90%] rounded-full py-2 px-4 flex justify-between items-center max-w-2xl h-12 shadow-md z-10">
+      <div className="border border-[#aaa] backdrop-blur-[2px] bg-black/85 text-white mx-auto w-[90%] rounded-full py-2 px-4 flex justify-between items-center max-w-[750px] h-12 shadow-md z-10">
         <div>
           <img src={logo} alt="" width={140} />
         </div>
-        {/* <div>
+        <div>
           <nav className="hidden md:flex gap-8">
             {navArr.map((item, index) => (
-              <a href={item.link} className="font-medium text-neutral-200 hover:scale-110 hover:text-blue-400 hover:mx-1 duration-300">{item.name}</a>
+              <a href={"#" + item.link} className=" font-medium text-neutral-200 hover:scale-110 hover:text-blue-400 hover:mx-1 duration-300">{item.name}</a>
             ))}
           </nav>
-        </div> */}
+        </div>
         <div className="hidden md:flex items-center">
           <div className="flex items-center gap-3">
             <a href="">
